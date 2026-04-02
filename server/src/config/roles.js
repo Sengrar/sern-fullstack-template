@@ -1,0 +1,30 @@
+const ROLES = {
+  ADMIN: "admin",
+  USER: "user",
+  MANAGER: "manager",
+};
+
+const PERMISSIONS = {
+  CREATE_PRODUCT: "create_product",
+  UPDATE_PRODUCT: "update_product",
+  DELETE_PRODUCT: "delete_product",
+  VIEW_PRODUCT: "view_product",
+  VIEW_USERS: "view_users",
+};
+
+const rolePermissions = {
+  [ROLES.ADMIN]: [
+    PERMISSIONS.CREATE_PRODUCT,
+    PERMISSIONS.UPDATE_PRODUCT,
+    PERMISSIONS.DELETE_PRODUCT,
+    PERMISSIONS.VIEW_PRODUCT,
+    PERMISSIONS.VIEW_USERS,
+  ],
+  [ROLES.MANAGER]: [
+    PERMISSIONS.CREATE_PRODUCT,
+    PERMISSIONS.UPDATE_PRODUCT,
+    PERMISSIONS.VIEW_PRODUCT,
+  ],
+  [ROLES.USER]: [PERMISSIONS.VIEW_PRODUCT],
+};
+export { ROLES, PERMISSIONS, rolePermissions };
