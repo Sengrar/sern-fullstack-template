@@ -150,7 +150,7 @@ root/
 ### 1️⃣ Clone Repo
 
 ```bash
-git clone https://github.com/your-username/sern-fullstack-template.git
+git clone https://github.com/Sengrar/sern-fullstack-template.git
 cd sern-fullstack-template
 ```
 
